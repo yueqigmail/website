@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Hurricane's Blog{% endblock %}
+
+{% block content %}
+<body>
+<div>
+    <h1>文章列表</h1>
+</div>
+
+<div>
+    <ul>
+        {% for blog in blogs %}
+        <li><a href ="{{blog.id}}">{{blog.title}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+</body>
